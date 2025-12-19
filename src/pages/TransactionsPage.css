@@ -1,0 +1,41 @@
+/* Recommended CSS additions for consistent styling */
+
+/* Match Dashboard's table and list styling */
+.wallet-list-area { 
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wallets-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wallets-table th, .wallets-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.wallets-table th {
+    background-color: #f4f6f9;
+    color: #444;
+    font-weight: 600;
+}
+
+/* Align Amount and Date to the right */
+.text-right {
+    text-align: right;
+}
+
+/* Visual indicators for Debit/Credit (matching common accounting/banking apps) */
+.amount-credit strong {
+    color: green;
+}
+
+.amount-debit strong {
+    color: #cc0000; /* Darker red */
+}

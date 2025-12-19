@@ -1,0 +1,116 @@
+/* src/pages/LoginPage.css */
+
+/* --- General Structure & Centering --- */
+.auth-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Full viewport height, maybe a subtle background color */
+    min-height: 100vh; 
+    background-color: #f4f6f9; 
+    padding: 20px;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    /* Match dashboard shadow subtly */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 400px; /* Standard login card width */
+    text-align: center;
+}
+
+/* --- Typography --- */
+.login-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* --- Form Elements --- */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    border-color: #007bff; /* Primary color focus */
+    outline: none;
+}
+
+/* --- Button Styling --- */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.btn-primary:disabled {
+    background-color: #a0c9f1;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* --- Error/Alert --- */
+.alert-error {
+    color: #d9534f;
+    background-color: #fdd;
+    border: 1px solid #f99;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* --- Link --- */
+.register-link-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.register-link-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link-text a:hover {
+    text-decoration: underline;
+}
